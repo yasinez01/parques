@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2AFFEB3B"
+    tools:context=".NuevoRestaurante">
+
+    <EditText
+        android:id="@+id/activity_nuevo_restaurante_etCierre"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#43FFEB3B"
+        android:ems="10"
+        android:hint="Hora de cierre"
+        android:inputType="text|textMultiLine"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/activity_nuevo_restaurante_tvApertura"
+        app:layout_constraintTop_toTopOf="@+id/activity_nuevo_restaurante_tvCierre" />
+
+    <EditText
+        android:id="@+id/activity_nuevo_restaurante_etApertura"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#43FFEB3B"
+        android:ems="10"
+        android:hint="Hora de apertura"
+        android:inputType="text|textMultiLine"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/activity_nuevo_restaurante_tvCierre"
+        app:layout_constraintTop_toBottomOf="@+id/activity_nuevo_restaurante_tvNombre" />
+
+    <TextView
+        android:id="@+id/activity_nuevo_restaurante_tvCierre"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left|center_vertical"
+        android:text="Horario cierre:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_nuevo_restaurante_tvApertura" />
+
+    <TextView
+        android:id="@+id/activity_nuevo_restaurante_tvTitulo"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:background="#313F51B5"
+        android:gravity="center"
+        android:text="Añadir Restaurante"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_nuevo_restaurante_tvNombre"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|left"
+        android:text="Nombre:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_nuevo_restaurante_tvTitulo" />
+
+    <TextView
+        android:id="@+id/activity_nuevo_restaurante_tvApertura"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|left"
+        android:text="Horario apertura: "
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_nuevo_restaurante_tvNombre" />
+
+    <Button
+        android:id="@+id/activity_nuevo_restaurante_buttonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Volver"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/activity_nuevo_restaurante_buttonAnadirRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="AnadirRestaurante"
+        android:text="Añadir Restaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/activity_nuevo_restaurante_etNombre"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#43FFEB3B"
+        android:ems="10"
+        android:hint="Nombre del Restaurante."
+        android:inputType="text|textMultiLine"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/activity_nuevo_restaurante_tvTitulo"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toEndOf="@+id/activity_nuevo_restaurante_tvNombre"
+        app:layout_constraintTop_toBottomOf="@+id/activity_nuevo_restaurante_tvTitulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

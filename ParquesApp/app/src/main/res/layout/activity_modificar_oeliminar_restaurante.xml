@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2AFFEB3B"
+    tools:context=".ModificarOEliminarEspectaculo">
+
+    <Button
+        android:id="@+id/activity_modificar_oeliminar_restaurante_buttonAñadirEspectaculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Modificar"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/activity_modificar_oeliminar_restaurante_buttonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Volver"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/activity_modificar_oeliminar_restaurante_etCierre"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#43FFEB3B"
+        android:ems="10"
+        android:hint="Cierre."
+        android:inputType="text|textMultiLine"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/activity_modificar_oeliminar_restaurante_tvEtiquetaApertura"
+        app:layout_constraintTop_toBottomOf="@+id/activity_modificar_oeliminar_restaurante_etApertura" />
+
+    <EditText
+        android:id="@+id/activity_modificar_oeliminar_restaurante_etApertura"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#43FFEB3B"
+        android:ems="10"
+        android:hint="Apertura"
+        android:inputType="text|textMultiLine"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/activity_modificar_oeliminar_restaurante_tvEtiquetaCierre"
+        app:layout_constraintTop_toBottomOf="@+id/activity_modificar_oeliminar_restaurante_etNombre" />
+
+    <EditText
+        android:id="@+id/activity_modificar_oeliminar_restaurante_etNombre"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#43FFEB3B"
+        android:ems="10"
+        android:hint="Nombre del Restaurante."
+        android:inputType="text|textMultiLine"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="15sp"
+        app:barrierAllowsGoneWidgets="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/activity_modificar_oeliminar_restaurante_tvEtiquetaNombre"
+        app:layout_constraintTop_toBottomOf="@+id/activity_modificar_oeliminar_restaurante_tvTitulo" />
+
+    <TextView
+        android:id="@+id/activity_modificar_oeliminar_restaurante_tvEtiquetaCierre"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="left|center_vertical"
+        android:text="Horario Cierre:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_modificar_oeliminar_restaurante_tvEtiquetaApertura" />
+
+    <TextView
+        android:id="@+id/activity_modificar_oeliminar_restaurante_tvEtiquetaApertura"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|left"
+        android:text="Horario Apertura:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_modificar_oeliminar_restaurante_tvEtiquetaNombre" />
+
+    <TextView
+        android:id="@+id/activity_modificar_oeliminar_restaurante_tvEtiquetaNombre"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|left"
+        android:text="Nombre:"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_modificar_oeliminar_restaurante_tvTitulo" />
+
+    <TextView
+        android:id="@+id/activity_modificar_oeliminar_restaurante_tvTitulo"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:background="#313F51B5"
+        android:gravity="center"
+        android:text="Modificar o Eliminar Restaurante"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/activity_modificar_oeliminar_restaurante_buttonEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="Eliminar"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/activity_modificar_oeliminar_restaurante_buttonAñadirEspectaculo"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/activity_modificar_oeliminar_restaurante_buttonVolver" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
